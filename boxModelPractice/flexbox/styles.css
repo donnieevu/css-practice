@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box; /*normalizing box model */
+}
+body{
+    margin: none;
+    font-family: Arial;
+    background-color: #EBE7E7;
+}
+.header{
+    text-align: center;
+    padding: 32px;
+    background: #E0DDDD;
+}
+#gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+}
+#gallery img{
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    /*this tells image to fill the img container while maintaining aspect ratio,*/
+    /*resulting in cropping to fit */
+    margin: 8px 0 0 0;
+    padding: 0 4px;
+    border-radius: 10px;
+}
+@media(max-width: 800px){
+    #gallery img{
+      width: 50%;
+    }
+  }
+@media(max-width:600px){
+    #gallery img{
+        width: 100%;
+    }
+}
