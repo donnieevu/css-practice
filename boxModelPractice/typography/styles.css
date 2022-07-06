@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+header h1{
+    text-align: center;
+    margin: -4px 0;
+    letter-spacing: .15px;
+}
+
+p{
+    margin: 0;
+}
+
+.label{
+    border: 2px solid black; /*used to group and prioritize content*/
+    width: 270px;
+    margin: 20px auto;
+    padding: 0 7px;
+}
+
+.divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
+    clear: right; 
+    /*this will clear the float property, pushing the divider
+    content down below the float text*/
+}
+
+.bold{
+    font-weight: 800;
+}
+
+.right{
+    float: right;
+}
+
+.lg{
+    height: 10px;
+}
+
+.lg, .md{
+    background-color: black;
+    border: 0;
+}
+
+.md{
+    height: 5px;
+}
+
+.sm-text{
+    font-size: .85rem;
+}
+
+.calories-info h1{
+    margin: -5px -2px;
+    overflow: hidden;
+}
+
+.calories-info span{
+    font-size: 1.2em;
+    margin: -7px 0 0 0;
+}
+
+.indent{
+    margin: 0 0 0 1em;
+    
+}
+
+.dbl-indent{
+    margin: 0 0 0 2em;
+}
+
+.daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+}
+
+.note{
+    font-size: .6rem;
+    margin: 5px 0;
+    padding: 0 8px;
+    text-indent: -8px;
+}
